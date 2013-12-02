@@ -37,3 +37,5 @@ Fork it on github.com/ogirard/zuia.example
 - Easy access properties  
 - Fluent approaches  
 - DataSource for parametrized UI tests  
+
+Implemented and tested with *Visual Studio 2012*.
