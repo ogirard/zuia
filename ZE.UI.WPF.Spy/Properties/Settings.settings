@@ -2,11 +2,11 @@
 <SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="ZE.UI.WPF.Spy.Properties" GeneratedClassName="Settings">
   <Profiles />
   <Settings>
-    <Setting Name="UITestProjectRoot" Type="System.String" Scope="Application">
-      <Value Profile="(Default)">O:\Dropbox\Zühlke\UIA\ZE.UIA\MyApp.UITest</Value>
-    </Setting>
     <Setting Name="TargetApplicationTitle" Type="System.String" Scope="Application">
       <Value Profile="(Default)">MyApp - Counter</Value>
+    </Setting>
+    <Setting Name="UITestProjectRoot" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">MyApp.UITest</Value>
     </Setting>
   </Settings>
 </SettingsFile>

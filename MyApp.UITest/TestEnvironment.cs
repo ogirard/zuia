@@ -7,6 +7,7 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Reflection;
 
 namespace MyApp.UITest
 {
@@ -32,10 +33,7 @@ namespace MyApp.UITest
     static TestEnvironment()
     {
       // init settings
-      /*
-       * TODO: adapt folder paths here and in the MyApp.UITest\App.config and ZE.UI.WPF.Spy\App.config !!!
-       */
-      Settings.Add(TestVariable.TargetApplicationFolder, @"O:\Dropbox\Zühlke\UIA\Mettler Toledo\MyApp\MyApp\bin\Debug\");
+      Settings.Add(TestVariable.TargetApplicationFolder, Path.GetDirectoryName(Assembly.GetCallingAssembly().Location) + @"\..\..\..\..\zuia.example\MyApp\bin\Debug\");
       Settings.Add(TestVariable.TargetApplicationExecutable, Path.Combine(Settings[TestVariable.TargetApplicationFolder], "MyApp.exe"));
       Settings.Add(TestVariable.TestDataFolder, Path.Combine(Settings[TestVariable.TargetApplicationFolder], @"TestData\"));
 

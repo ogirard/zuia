@@ -36,7 +36,7 @@ namespace ZE.UI.WPF.Spy
 
       // init defaults
       WindowTitle = Settings.Default.TargetApplicationTitle;
-      UITestProjectFolder = Settings.Default.UITestProjectRoot;
+      UITestProjectFolder = Path.GetDirectoryName(Assembly.GetCallingAssembly().Location) + @"\..\..\..\" + Settings.Default.UITestProjectRoot;
 
       // init available UIMaps
       UpdatableUIMaps =
